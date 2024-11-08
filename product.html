@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modern Product Listings</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet">
+    </head>
+    <body class="bg-gray-50">
+        <!-- Header -->
+        <!-- Header -->
+        <header class="bg-white shadow-md sticky top-0 z-10">
+            <div
+                class="container mx-auto p-4 flex justify-between items-center">
+                <!-- Logo/Title -->
+                <h1 class="text-3xl font-bold text-blue-600">Marketplace</h1>
+
+                <!-- Navigation Menu -->
+                <nav class="hidden md:flex space-x-4">
+                    <a href="index.html"
+                        class="text-gray-600 hover:text-blue-600">Home</a>
+                    <a href="product.html"
+                        class="text-gray-600 hover:text-blue-600">Products</a>
+                    <a href="checkout.html"
+                        class="text-gray-600 hover:text-blue-600">Checkout</a>
+                    <a href="contact.html"
+                        class="text-gray-600 hover:text-blue-600">Contact</a>
+                    <a href="seller.html"
+                        class="text-gray-600 hover:text-blue-600">Seller</a>
+                </nav>
+
+                <!-- Hamburger Icon for mobile view -->
+                <div class="md:hidden">
+                    <button id="hamburger-btn"
+                        class="text-gray-600 hover:text-blue-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor"
+                            class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile menu dropdown -->
+            <div id="mobile-menu"
+                class="md:hidden hidden bg-white shadow-md py-4">
+                <nav class="flex flex-col items-center space-y-4">
+                    <a href="index.html"
+                        class="text-gray-600 hover:text-blue-600">Home</a>
+                    <a href="product.html"
+                        class="text-gray-600 hover:text-blue-600">Products</a>
+                    <a href="checkout.html"
+                        class="text-gray-600 hover:text-blue-600">Checkout</a>
+                    <a href="contact.html"
+                        class="text-gray-600 hover:text-blue-600">Contact</a>
+                    <a href="seller.html"
+                        class="text-gray-600 hover:text-blue-600">Seller</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Product Listings -->
+        <section class="bg-gray-100 py-12">
+            <div class="container mx-auto text-center">
+                <h1 class="text-6xl font-bold mb-8 ">Products</h1>
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
+                    <!-- Product 1 -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105">
+                        <img
+                            src="https://images.frandroid.com/wp-content/uploads/2019/10/c_apple-iphone-11-pro-frandroid-dsc02347-1200x800.jpg"
+                            alt="Smartphone"
+                            class="w-full h-48 object-cover rounded-md mb-4">
+                        <h4 class="text-lg font-semibold">Smartphone</h4>
+                        <p class="text-gray-600">$699.00</p>
+                        <a href="#"
+                            class="text-blue-600 font-semibold hover:underline mt-2 block">View
+                            Details</a>
+                    </div>
+                    <!-- Product 2 -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105">
+                        <img
+                            src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
+                            alt="Laptop"
+                            class="w-full h-48 object-cover rounded-md mb-4">
+                        <h4 class="text-lg font-semibold">Laptop</h4>
+                        <p class="text-gray-600">$999.00</p>
+                        <a href="#"
+                            class="text-blue-600 font-semibold hover:underline mt-2 block">View
+                            Details</a>
+                    </div>
+                    <!-- Product 3 -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105">
+                        <img
+                            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+                            alt="Headphones"
+                            class="w-full h-48 object-cover rounded-md mb-4">
+                        <h4 class="text-lg font-semibold">Headphones</h4>
+                        <p class="text-gray-600">$199.00</p>
+                        <a href="#"
+                            class="text-blue-600 font-semibold hover:underline mt-2 block">View
+                            Details</a>
+                    </div>
+                    <!-- Product 4 -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105">
+                        <img
+                            src="https://thewearify.com/wp-content/uploads/2020/05/dz09-smartwatch-1-1.jpg"
+                            alt="Smart Watch"
+                            class="w-full h-48 object-cover rounded-md mb-4">
+                        <h4 class="text-lg font-semibold">Smart Watch</h4>
+                        <p class="text-gray-600">$149.00</p>
+                        <a href="#"
+                            class="text-blue-600 font-semibold hover:underline mt-2 block">View
+                            Details</a>
+                    </div>
+                    <!-- Product 5 -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105">
+                        <img
+                            src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f"
+                            alt="Camera"
+                            class="w-full h-48 object-cover rounded-md mb-4">
+                        <h4 class="text-lg font-semibold">Camera</h4>
+                        <p class="text-gray-600">$299.00</p>
+                        <a href="#"
+                            class="text-blue-600 font-semibold hover:underline mt-2 block">View
+                            Details</a>
+                    </div>
+                    <!-- Product 6 -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105">
+                        <img
+                            src="https://media.cntraveler.com/photos/5935ad9375d81c0e57f71e4c/master/pass/backpack-collage.jpg"
+                            alt="Travel Backpack"
+                            class="w-full h-48 object-cover rounded-md mb-4">
+                        <h4 class="text-lg font-semibold">Travel Backpack</h4>
+                        <p class="text-gray-600">$89.00</p>
+                        <a href="#"
+                            class="text-blue-600 font-semibold hover:underline mt-2 block">View
+                            Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+  
+    hamburgerBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+    </body>
+</html>
